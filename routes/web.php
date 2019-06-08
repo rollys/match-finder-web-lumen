@@ -41,4 +41,16 @@ $router->group([
         $router->put('/{id:[\d]+}', $controller.'@update');
         $router->delete('/{id:[\d]+}', $controller.'@delete');
     });
+
+    $router->group(['prefix' => '/reservation',], function () use ($router) {
+        $controller = 'ReservationController';
+        $router->get('/', $controller.'@index');
+        $router->post('/', $controller.'@create');
+        $router->get('/{id:[\d]+}', [
+            'as' => 'reservation.show',
+            'uses' => $controller.'@show'
+        ]);
+        $router->put('/{id:[\d]+}', $controller.'@update');
+        $router->delete('/{id:[\d]+}', $controller.'@delete');
+    });
 });
