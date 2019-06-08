@@ -53,4 +53,17 @@ $router->group([
         $router->put('/{id:[\d]+}', $controller.'@update');
         $router->delete('/{id:[\d]+}', $controller.'@delete');
     });
+
+    $router->group(['prefix' => '/user',], function () use ($router) {
+        $controller = 'UserController';
+        $router->get('/login', $controller.'@login');
+        $router->get('/', $controller.'@index');
+        $router->post('/', $controller.'@create');
+        $router->get('/{id:[\d]+}', [
+            'as' => 'user.show',
+            'uses' => $controller.'@show'
+        ]);
+        $router->put('/{id:[\d]+}', $controller.'@update');
+        $router->delete('/{id:[\d]+}', $controller.'@delete');
+    });
 });
