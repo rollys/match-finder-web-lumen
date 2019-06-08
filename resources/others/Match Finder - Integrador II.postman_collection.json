@@ -1,0 +1,681 @@
+{
+	"info": {
+		"_postman_id": "14d096e4-4581-4cbe-b77e-8ccba022f406",
+		"name": "Match Finder - Integrador II",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Business by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://match-finder.vh/api/v1/business/2",
+					"protocol": "http",
+					"host": [
+						"match-finder",
+						"vh"
+					],
+					"path": [
+						"api",
+						"v1",
+						"business",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Business",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://match-finder.vh/api/v1/business",
+					"protocol": "http",
+					"host": [
+						"match-finder",
+						"vh"
+					],
+					"path": [
+						"api",
+						"v1",
+						"business"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Business",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"business_type\": \"lancenter\",\n    \"name\": \"mari\",\n    \"logo\": \"\",\n    \"description\": \"\",\n    \"price\": 1.5,\n    \"seating\": 25,\n    \"latitude\": \"-12.0674589\",\n    \"longitude\": \"-77.0380403\",\n    \"opening_days\": \"\",\n    \"init_hour\": \"\",\n    \"fin_hour\": \"\"\n}"
+				},
+				"url": {
+					"raw": "http://match-finder.vh/api/v1/business",
+					"protocol": "http",
+					"host": [
+						"match-finder",
+						"vh"
+					],
+					"path": [
+						"api",
+						"v1",
+						"business"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Business by ID",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"business_type\": \"lancenter\",\n    \"name\": \"marie\",\n    \"logo\": \"\",\n    \"description\": \"\",\n    \"price\": 1.5,\n    \"seating\": 25,\n    \"latitude\": \"-12.0674589\",\n    \"longitude\": \"-77.0380403\",\n    \"opening_days\": \"\",\n    \"init_hour\": \"\",\n    \"fin_hour\": \"\"\n}"
+				},
+				"url": {
+					"raw": "http://match-finder.vh/api/v1/business/5",
+					"protocol": "http",
+					"host": [
+						"match-finder",
+						"vh"
+					],
+					"path": [
+						"api",
+						"v1",
+						"business",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Business by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"business_type\": \"lancenter\",\n    \"name\": \"marie\",\n    \"logo\": \"\",\n    \"description\": \"\",\n    \"price\": 1.5,\n    \"seating\": 25,\n    \"latitude\": \"-12.0674589\",\n    \"longitude\": \"-77.0380403\",\n    \"opening_days\": \"\",\n    \"init_hour\": \"\",\n    \"fin_hour\": \"\"\n}"
+				},
+				"url": {
+					"raw": "http://match-finder.vh/api/v1/business/5",
+					"protocol": "http",
+					"host": [
+						"match-finder",
+						"vh"
+					],
+					"path": [
+						"api",
+						"v1",
+						"business",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Game",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://match-finder.vh/api/v1/game",
+					"protocol": "http",
+					"host": [
+						"match-finder",
+						"vh"
+					],
+					"path": [
+						"api",
+						"v1",
+						"game"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Game by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://match-finder.vh/api/v1/game/3",
+					"protocol": "http",
+					"host": [
+						"match-finder",
+						"vh"
+					],
+					"path": [
+						"api",
+						"v1",
+						"game",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Game by ID",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"game_type\": \"MOBA\",\n    \"name\": \"marie\",\n    \"logo\": \"\",\n    \"description\": \"AAA\"\n}"
+				},
+				"url": {
+					"raw": "http://match-finder.vh/api/v1/game/3",
+					"protocol": "http",
+					"host": [
+						"match-finder",
+						"vh"
+					],
+					"path": [
+						"api",
+						"v1",
+						"game",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Game",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"game_type\": \"MOBA\",\n    \"name\": \"marie\",\n    \"logo\": \"\",\n    \"description\": \"AAA\"\n}"
+				},
+				"url": {
+					"raw": "http://match-finder.vh/api/v1/game",
+					"protocol": "http",
+					"host": [
+						"match-finder",
+						"vh"
+					],
+					"path": [
+						"api",
+						"v1",
+						"game"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Game by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"game_type\": \"MOBA\",\n    \"name\": \"marie\",\n    \"logo\": \"\",\n    \"description\": \"AAA\"\n}"
+				},
+				"url": {
+					"raw": "http://match-finder.vh/api/v1/game/8",
+					"protocol": "http",
+					"host": [
+						"match-finder",
+						"vh"
+					],
+					"path": [
+						"api",
+						"v1",
+						"game",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Reservation",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"game_type\": \"MOBA\",\n    \"name\": \"marie\",\n    \"logo\": \"\",\n    \"description\": \"AAA\"\n}"
+				},
+				"url": {
+					"raw": "http://match-finder.vh/api/v1/reservation",
+					"protocol": "http",
+					"host": [
+						"match-finder",
+						"vh"
+					],
+					"path": [
+						"api",
+						"v1",
+						"reservation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Reservation by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"game_type\": \"MOBA\",\n    \"name\": \"marie\",\n    \"logo\": \"\",\n    \"description\": \"AAA\"\n}"
+				},
+				"url": {
+					"raw": "http://match-finder.vh/api/v1/reservation/1",
+					"protocol": "http",
+					"host": [
+						"match-finder",
+						"vh"
+					],
+					"path": [
+						"api",
+						"v1",
+						"reservation",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Reservation by ID",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"business_id\":1,\n    \"user_id\":1,\n    \"date_time\": \"25/18/2018\",\n    \"init_hour\": \"05:00PM\"\n}"
+				},
+				"url": {
+					"raw": "http://match-finder.vh/api/v1/reservation/1",
+					"protocol": "http",
+					"host": [
+						"match-finder",
+						"vh"
+					],
+					"path": [
+						"api",
+						"v1",
+						"reservation",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Reservation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"business_id\":2,\n    \"user_id\":1,\n    \"date_time\": \"25/18/2018\",\n    \"init_hour\": \"05:00PM\"\n}"
+				},
+				"url": {
+					"raw": "http://match-finder.vh/api/v1/reservation",
+					"protocol": "http",
+					"host": [
+						"match-finder",
+						"vh"
+					],
+					"path": [
+						"api",
+						"v1",
+						"reservation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Reservation",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"business_id\":2,\n    \"user_id\":1,\n    \"date_time\": \"25/18/2018\",\n    \"init_hour\": \"05:00PM\"\n}"
+				},
+				"url": {
+					"raw": "http://match-finder.vh/api/v1/reservation/9",
+					"protocol": "http",
+					"host": [
+						"match-finder",
+						"vh"
+					],
+					"path": [
+						"api",
+						"v1",
+						"reservation",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"business_id\":2,\n    \"user_id\":1,\n    \"date_time\": \"25/18/2018\",\n    \"init_hour\": \"05:00PM\"\n}"
+				},
+				"url": {
+					"raw": "http://match-finder.vh/api/v1/user",
+					"protocol": "http",
+					"host": [
+						"match-finder",
+						"vh"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"business_id\":2,\n    \"user_id\":1,\n    \"date_time\": \"25/18/2018\",\n    \"init_hour\": \"05:00PM\"\n}"
+				},
+				"url": {
+					"raw": "http://match-finder.vh/api/v1/user/1",
+					"protocol": "http",
+					"host": [
+						"match-finder",
+						"vh"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User by ID",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"rol\": \"administrador\",\n        \"username\": \"administrador\",\n        \"name\": \"test2\",\n        \"lastname\": \"test\",\n        \"birthday\": \"01/12/18\",\n        \"mail\": \"asas@mail.com\",\n        \"sex\": \"masculino\"\n    }"
+				},
+				"url": {
+					"raw": "http://match-finder.vh/api/v1/user/1",
+					"protocol": "http",
+					"host": [
+						"match-finder",
+						"vh"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"rol\": \"dev\",\n        \"username\": \"rolly\",\n        \"password\": \"123456\",\n        \"name\": \"test2\",\n        \"lastname\": \"test\",\n        \"birthday\": \"01/12/18\",\n        \"mail\": \"rolly@mail.com\",\n        \"sex\": \"masculino\"\n    }"
+				},
+				"url": {
+					"raw": "http://match-finder.vh/api/v1/user",
+					"protocol": "http",
+					"host": [
+						"match-finder",
+						"vh"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"rol\": \"dev\",\n        \"username\": \"rolly\",\n        \"password\": \"123456\",\n        \"name\": \"test2\",\n        \"lastname\": \"test\",\n        \"birthday\": \"01/12/18\",\n        \"mail\": \"rolly@mail.com\",\n        \"sex\": \"masculino\"\n    }"
+				},
+				"url": {
+					"raw": "http://match-finder.vh/api/v1/user/6",
+					"protocol": "http",
+					"host": [
+						"match-finder",
+						"vh"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"administrador\",\n    \"password\": \"123456789\"\n}"
+				},
+				"url": {
+					"raw": "http://match-finder.vh/api/v1/user/login",
+					"protocol": "http",
+					"host": [
+						"match-finder",
+						"vh"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
