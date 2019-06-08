@@ -14,3 +14,31 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->group([
+    'prefix' => '/api/v1',
+], function () use ($router) {
+    $router->group(['prefix' => '/business',], function () use ($router) {
+        $controller = 'BusinessController';
+        $router->get('/', $controller.'@index');
+        $router->post('/', $controller.'@create');
+        $router->get('/{id:[\d]+}', [
+            'as' => 'business.show',
+            'uses' => $controller.'@show'
+        ]);
+        $router->put('/{id:[\d]+}', $controller.'@update');
+        $router->delete('/{id:[\d]+}', $controller.'@delete');
+    });
+
+    $router->group(['prefix' => '/game',], function () use ($router) {
+        $controller = 'GameController';
+        $router->get('/', $controller.'@index');
+        $router->post('/', $controller.'@create');
+        $router->get('/{id:[\d]+}', [
+            'as' => 'game.show',
+            'uses' => $controller.'@show'
+        ]);
+        $router->put('/{id:[\d]+}', $controller.'@update');
+        $router->delete('/{id:[\d]+}', $controller.'@delete');
+    });
+});
